@@ -42,7 +42,7 @@ export const MenuItem = ({
             id={`$item-${uuid}-quantity`}
             value={quantity}
             type="number"
-            onChange={(event) => updateQuantity(event.target.value)}
+            onChange={(event) => updateQuantity(+event.target.value)}
           />
         </Box>
         <Box padding="space20" textAlign="right" width="100%">
