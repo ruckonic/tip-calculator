@@ -15,11 +15,12 @@ export const MenuItem = ({
   name,
   price,
   quantity,
-  total,
   updatePrice = () => {},
   updateQuantity = () => {},
   remove = () => {}
 }) => {
+  const total = price * quantity;
+
   return (
     <Card marginTop="space40">
       <Heading variant="heading30" as="h3">
@@ -32,8 +33,12 @@ export const MenuItem = ({
             id={`$item-${uuid}-price`}
             insertBefore={<div>$</div>}
             value={price}
+<<<<<<< HEAD:src/components/MenuItem.js
             type="number"
             onChange={(event) => updatePrice(event.target.value)}
+=======
+            onChange={(event) => updatePrice(parseInt(event.target.value))}
+>>>>>>> 50e8b4b315babcf83696f8a088e5e971d547aa8f:src/MenuItem.js
           />
         </Box>
         <Box padding="space20">
@@ -41,8 +46,12 @@ export const MenuItem = ({
           <Input
             id={`$item-${uuid}-quantity`}
             value={quantity}
+<<<<<<< HEAD:src/components/MenuItem.js
             type="number"
             onChange={(event) => updateQuantity(+event.target.value)}
+=======
+            onChange={(event) => updateQuantity(parseInt(event.target.value))}
+>>>>>>> 50e8b4b315babcf83696f8a088e5e971d547aa8f:src/MenuItem.js
           />
         </Box>
         <Box padding="space20" textAlign="right" width="100%">
