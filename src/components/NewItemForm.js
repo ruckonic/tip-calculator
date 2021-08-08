@@ -7,7 +7,7 @@ export const NewItemForm = ({ onSubmit }) => {
 
   const isValid = () => {
     if (!name) return false;
-    if (!price.length) return false;
+    if (!parseInt(price)) return false;
     return true;
   };
 

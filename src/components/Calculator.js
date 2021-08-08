@@ -12,7 +12,7 @@ const Calculator = () => {
       <NewItemFormContainer />
       <MenuItemsContainer />
       <TipSelectContainer />
-      <Summary />
+      <SummaryContainer />
     </Card>
   );
 };
