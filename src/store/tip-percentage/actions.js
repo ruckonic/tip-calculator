@@ -1,4 +1,4 @@
-export const TIP_PERCENTAGE_UPDATED = 'UPDATE_TIP_PERCENTAGE';
+export const TIP_PERCENTAGE_UPDATED = 'TIP_PERCENTAGE/UPDATE';
 
 export const updateTip = (tipPercentage) => ({
   type: TIP_PERCENTAGE_UPDATED,
